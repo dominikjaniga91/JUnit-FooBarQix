@@ -80,9 +80,9 @@ public class FooBarQixTest {
            "733, QixFooFoo",
            "33, FooFooFoo"
    })
-    void shouldReturnAppropriateString_afterReadingNumberFromCsvSource(String input, String expected) {
+    void shouldReturnAppropriateString_afterReadingNumberFromCsvSource(int input, String expected) {
 
-        String actual = fooBarQix.returnAppropriateString(Integer.parseInt(input));
+        String actual = fooBarQix.returnAppropriateString(input);
         assertEquals(expected, actual);
     }
 }
